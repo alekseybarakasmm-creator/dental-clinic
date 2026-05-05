@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AESTHETICA | Премиальная стоматология</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clinic: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            gold: '#C5A059',
+                        }
+                    },
+                    fontFamily: { sans: ['Manrope', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Manrope', sans-serif; background-color: #ffffff; color: #0f172a; }
+        .glass-header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .card-shadow { transition: all 0.4s ease; border: 1px solid #f1f5f9; }
+        .card-shadow:hover { transform: translateY(-5px); box-shadow: 0 20px 40px -10px rgba(0,0,0,0.05); border-color: #C5A059; }
+    </style>
+</head>
+<body class="antialiased selection:bg-clinic-gold selection:text-white">
+
+    <header class="fixed w-full z-50 glass-header border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
+            <div class="flex items-center gap-2">
+                <i class="ph-fill ph-shield-plus text-clinic-gold text-3xl"></i>
+                <div class="font-extrabold text-xl tracking-tighter uppercase">Aesthetica<span class="text-clinic-gold">.</span></div>
+            </div>
+            
+            <nav class="hidden lg:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500">
+                <a href="#services" class="hover:text-clinic-gold transition">Услуги</a>
+                <a href="#about" class="hover:text-clinic-gold transition">О клинике</a>
+                <a href="#team" class="hover:text-clinic-gold transition">Врачи</a>
+                <a href="#reviews" class="hover:text-clinic-gold transition">Отзывы</a>
+            </nav>
+
+            <div class="flex items-center gap-6">
+                <a href="tel:+74950000000" class="hidden md:block font-bold text-sm">+7 (495) 000-00-00</a>
+                <a href="#contact" class="bg-clinic-900 text-white px-6 py-3 rounded-sm text-[11px] font-bold uppercase tracking-widest hover:bg-clinic-gold transition duration-300">
+                    Запись
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-clinic-50">
+            <div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Clinic Interior" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-clinic-50 via-transparent to-transparent"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-gray-200 text-clinic-gold text-[10px] font-bold uppercase tracking-widest mb-8">
+                        Стоматология мирового уровня
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-8 tracking-tight text-clinic-900">
+                        Инженерия <br>здоровой <span class="text-clinic-gold italic font-light tracking-normal">улыбки.</span>
+                    </h1>
+                    <p class="text-lg text-gray-500 mb-10 max-w-lg leading-relaxed font-light">
+                        Мы объединили передовые цифровые технологии и опыт ведущих специалистов для создания безупречного результата. Лечение под микроскопом, цифровая диагностика и комфорт уровня 5*.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-clinic-900 text-white px-10 py-5 font-bold uppercase text-[11px] tracking-widest hover:bg-clinic-gold transition text-center">Записаться на прием</a>
+                        <a href="#services" class="border border-gray-300 text-clinic-900 px-10 py-5 font-bold uppercase text-[11px] tracking-widest hover:border-clinic-gold transition text-center">Наши услуги</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="mb-20">
+                    <p class="text-clinic-gold font-bold text-[10px] uppercase tracking-[0.3em] mb-4">Направления</p>
+                    <h2 class="text-4xl font-extrabold text-clinic-900 tracking-tight">Полный спектр <br>цифровой стоматологии</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="card-shadow p-10 bg-white group">
+                        <div class="w-14 h-14 bg-clinic-50 flex items-center justify-center mb-8 group-hover:bg-clinic-gold transition-colors duration-500">
+                            <i class="ph ph-tooth text-3xl text-clinic-900 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Имплантация</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Восстановление зубов за один день по протоколам All-on-4 и All-on-6. Пожизненная гарантия на работу.</p>
+                        <ul class="text-[11px] font-bold text-gray-400 space-y-2 uppercase tracking-wider">
+                            <li class="flex items-center gap-2"><i class="ph ph-check text-clinic-gold"></i> Без боли и отеков</li>
+                            <li class="flex items-center gap-2"><i class="ph ph-check text-clinic-gold"></i> Швейцарские импланты</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-shadow p-10 bg-white group">
+                        <div class="w-14 h-14 bg-clinic-50 flex items-center justify-center mb-8 group-hover:bg-clinic-gold transition-colors duration-500">
+                            <i class="ph ph-sparkle text-3xl text-clinic-900 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Виниры</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Создание "голливудской улыбки" с помощью ультратонких керамических виниров без обточки зубов.</p>
+                        <ul class="text-[11px] font-bold text-gray-400 space-y-2 uppercase tracking-wider">
+                            <li class="flex items-center gap-2"><i class="ph ph-check text-clinic-gold"></i> Идеальный цвет</li>
+                            <li class="flex items-center gap-2"><i class="ph ph-check text-clinic-gold"></i> Срок службы 20 лет</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-shadow p-10 bg-white group">
+                        <div class="w-14 h-14 bg-clinic-50 flex items-center justify-center mb-8 group-hover:bg-clinic-gold transition-colors duration-500">
+                            <i class="ph ph-microscope text-3xl text-clinic-900 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Лечение под микроскопом</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Максимальное сохранение тканей зуба. Лечение самых сложных каналов с 30-кратным увеличением.</p>
+                        <ul class="text-[11px] font-bold text-gray-400 space-y-2 uppercase tracking-wider">
+                            <li class="flex items-center gap-2"><i class="ph ph-check text-clinic-gold"></i> Точность до 0.1 мм</li>
+                            <li class="flex items-center gap-2"><i class="ph ph-check text-clinic-gold"></i> Без рецидивов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="py-32 bg-clinic-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+                <div class="mb-20">
+                    <p class="text-clinic-gold font-bold text-[10px] uppercase tracking-[0.3em] mb-4">Наши эксперты</p>
+                    <h2 class="text-4xl font-extrabold text-clinic-900 tracking-tight">Команда специалистов</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-12 text-left">
+                    <div class="group">
+                        <div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-6 rounded-sm">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71f1536783?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        </div>
+                        <h4 class="text-lg font-bold text-clinic-900 uppercase tracking-tight">Елена Громова</h4>
+                        <p class="text-clinic-gold text-[10px] font-bold uppercase tracking-widest mb-3">Главный врач, Стоматолог-ортопед</p>
+                        <p class="text-gray-500 text-sm font-light">Специалист по тотальной реконструкции улыбки и протезированию. Опыт более 15 лет.</p>
+                    </div>
+
+                    <div class="group">
+                        <div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-6 rounded-sm">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        </div>
+                        <h4 class="text-lg font-bold text-clinic-900 uppercase tracking-tight">Александр Волков</h4>
+                        <p class="text-clinic-gold text-[10px] font-bold uppercase tracking-widest mb-3">Хирург-имплантолог</p>
+                        <p class="text-gray-500 text-sm font-light">Эксперт в области челюстно-лицевой хирургии и сложной костной пластики.</p>
+                    </div>
+
+                    <div class="group">
+                        <div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 mb-6 rounded-sm">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        </div>
+                        <h4 class="text-lg font-bold text-clinic-900 uppercase tracking-tight">Мария Самойлова</h4>
+                        <p class="text-clinic-gold text-[10px] font-bold uppercase tracking-widest mb-3">Стоматолог-терапевт</p>
+                        <p class="text-gray-500 text-sm font-light">Специализация: высокоточное лечение каналов и художественная реставрация.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-32 bg-clinic-900 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                <div class="bg-white p-10 md:p-20 rounded-sm grid lg:grid-cols-2 gap-16 items-center shadow-2xl">
+                    <div>
+                        <h2 class="text-4xl font-extrabold text-clinic-900 tracking-tight mb-6 uppercase">Сделайте первый шаг <br>к новой улыбке</h2>
+                        <p class="text-gray-500 text-lg font-light mb-10 leading-relaxed">На первичной консультации мы проведем 3D-диагностику и составим детальный план лечения с фиксированной стоимостью.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-clinic-50 rounded-full flex items-center justify-center text-clinic-gold text-xl"><i class="ph ph-phone-call"></i></div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Горячая линия</p>
+                                    <p class="text-lg font-bold text-clinic-900">+7 (495) 000-00-00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-clinic-50 rounded-full flex items-center justify-center text-clinic-gold text-xl"><i class="ph ph-map-pin"></i></div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Адрес клиники</p>
+                                    <p class="text-lg font-bold text-clinic-900">Москва, ул. Пречистенка, 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-clinic-50 p-8 md:p-12">
+                        <h4 class="text-xl font-bold mb-8 uppercase tracking-tight text-center text-clinic-900">Заявка на консультацию</h4>
+                        <form onsubmit="event.preventDefault(); alert('Это демо-режим. На реальном сайте заявка придет вам в Telegram!');" class="space-y-4">
+                            <input type="text" placeholder="Ваше имя" required class="w-full bg-white border border-gray-200 p-4 outline-none focus:border-clinic-gold transition">
+                            <input type="tel" placeholder="Номер телефона" required class="w-full bg-white border border-gray-200 p-4 outline-none focus:border-clinic-gold transition">
+                            <button type="submit" class="w-full bg-clinic-900 text-white font-bold py-5 uppercase text-[11px] tracking-[0.2em] hover:bg-clinic-gold transition duration-300">
+                                Забронировать время
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2 opacity-50">
+                <i class="ph-fill ph-shield-plus text-2xl"></i>
+                <span class="font-bold uppercase tracking-tight">Aesthetica</span>
+            </div>
+            <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest text-center">© 2024 AESTHETICA DENTAL. Премиальный сервис.</p>
+            <p class="text-[10px] text-gray-400 font-mono">Designed by AlBarakAi Engineering</p>
+        </div>
+    </footer>
+
+</body>
+</html>
